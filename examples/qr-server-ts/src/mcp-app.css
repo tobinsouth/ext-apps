@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 340px;
+  width: 340px;
+}
+
+#qr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#qr-container img {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loading, .error {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+}
+
+.error {
+  color: #c00;
+}
+
+@media (prefers-color-scheme: dark) {
+  .loading {
+    color: #999;
+  }
+}
